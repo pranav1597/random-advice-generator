@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container{
+    /* outline: 1px solid blue; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-advice{
+    /* outline: 1px solid red; */
+    position: relative;
+    width: 90%;
+    /* height: 50vh; */
+    text-align: center;
+    margin: auto;
+    padding: 45px 20px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+
+.container-advice p{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: hsl(150, 100%, 66%);
+    margin-top: 0;
+}
+
+.advice-text{
+    color: hsl(193, 38%, 86%);
+    margin-top: 20px;
+}
+
+.divider-mobile{
+    margin-top: 15px;
+}
+
+.divider-desktop{
+    display: none;
+}
+
+.btn{
+    /* outline: 1px solid black; */
+    position: absolute;
+    left: 42%;
+    bottom: -1em;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+@media(min-width:1000px){
+    .container-advice{
+        width: 45%;
+        padding: 50px 30px;
+    }
+
+    .divider-mobile{
+        display: none;
+    }
+
+    .divider-desktop{
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .btn{
+        left: 45%;
+    }
+}
